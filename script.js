@@ -1,4 +1,5 @@
-// Información de los donuts famosos
+// Información de los donuts famosos usando title y content en cada uno
+
 const posts = {
   glaseado: {
     title: "Donut Glaseado Clásico",
@@ -57,6 +58,7 @@ const posts = {
 };
 
 // Contenedor donde se mostrará el contenido...
+
 const container = document.getElementById("post-container");
 
 // Función para mostrar un post
@@ -74,6 +76,7 @@ function mostrarPost(postId) {
 mostrarPost("glaseado");
 
 // Añadir eventos a los botones ..
+
 document.querySelectorAll(".nav-btn").forEach(btn => {
   btn.addEventListener("click", () => {
     const postId = btn.getAttribute("data-post");
