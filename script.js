@@ -1,35 +1,62 @@
-// Entradas del blog
+// Información de los donuts famosos
 const posts = {
   glaseado: {
-    title: "Donut Glaseado",
-    img: "https://images.unsplash.com/photo-1612197527762-7b84d1b9e3ad?auto=format&fit=crop&w=800&q=80",
+    title: "Donut Glaseado Clásico",
     content: `
-      El clásico de los clásicos 🍩.  
-      Su glaseado brillante y textura suave lo hacen irresistible.  
-      Perfecto para acompañar con un café por la mañana o para un antojo dulce a cualquier hora.
+      El donut glaseado clásico nació en Estados Unidos a mediados del siglo XIX, cuando los inmigrantes holandeses popularizaron las rosquillas fritas. 
+      Su cobertura de azúcar glas se añadió posteriormente, convirtiéndolo en el emblema de cadenas como Krispy Kreme. 
+      Suele prepararse con harina, leche, huevos, levadura y mantequilla, y se fríe hasta quedar dorado antes de bañarse en glaseado. 
+      Es el donut más tradicional y reconocido en todo el mundo.
     `
   },
   chocolate: {
     title: "Donut de Chocolate",
-    img: "https://images.unsplash.com/photo-1627308595229-7830a5c91f9f?auto=format&fit=crop&w=800&q=80",
     content: `
-      Para los amantes del cacao 🍫.  
-      Cubierto con una capa generosa de chocolate y, a veces, chispas.  
-      Es el favorito de los más golosos y una tentación difícil de resistir.
+      El donut de chocolate surgió como una variación del glaseado tradicional, añadiendo cacao a la masa o una cobertura de chocolate fundido. 
+      Fue especialmente popularizado en Estados Unidos en la segunda mitad del siglo XX, gracias a su sabor más intenso y su aspecto brillante. 
+      Los ingredientes principales incluyen cacao en polvo, mantequilla, azúcar y levadura, y suele encontrarse tanto relleno como cubierto. 
+      Es uno de los sabores preferidos en cafeterías y panaderías modernas.
     `
   },
-  fresa: {
-    title: "Donut de Fresa",
-    img: "https://images.unsplash.com/photo-1590080875832-48e62a57a0a5?auto=format&fit=crop&w=800&q=80",
+  cream: {
+    title: "Boston Cream Donut",
     content: `
-      Dulce, colorido y delicioso 🍓.  
-      Su cobertura rosa y sabor afrutado lo convierten en el donut más alegre del mostrador.  
-      Ideal para quienes buscan algo fresco y bonito.
+      Este donut fue creado en Boston, Massachusetts, inspirado en el pastel conocido como Boston Cream Pie. 
+      Está relleno de una suave crema pastelera y cubierto con una capa de chocolate brillante. 
+      Se elabora con una masa esponjosa fermentada, frita y luego inyectada con el relleno. 
+      En 2003 fue declarado oficialmente el donut representativo del estado de Massachusetts, y sigue siendo un clásico de las pastelerías estadounidenses.
+    `
+  },
+  jelly: {
+    title: "Jelly Donut",
+    content: `
+      El jelly donut, también conocido como donut relleno de mermelada, tiene sus raíces en Europa Central, particularmente en Alemania y Polonia, donde se conocen como Berliner o Pączki. 
+      Llegó a Estados Unidos con los inmigrantes europeos y se popularizó en el siglo XX. 
+      Está relleno de mermelada de fresa, frambuesa o mora, y se espolvorea con azúcar glas. 
+      Es especialmente tradicional durante la festividad judía de Hanukkah.
+    `
+  },
+  cronut: {
+    title: "Cronut",
+    content: `
+      El cronut es una invención moderna creada en 2013 por el chef Dominique Ansel en Nueva York. 
+      Combina la técnica del croissant francés con la forma y fritura del donut. 
+      Su masa hojaldrada se fríe y se rellena con cremas de sabores variados, como vainilla o limón. 
+      El cronut causó gran sensación en su lanzamiento, generando largas filas en la pastelería de Ansel y extendiéndose rápidamente por todo el mundo como un fenómeno gastronómico.
+    `
+  },
+  simpson: {
+    title: "Simpson Donut",
+    content: `
+      El donut de los Simpson se hizo mundialmente famoso gracias a la serie de televisión creada por Matt Groening. 
+      Aunque visualmente destaca por su cobertura rosa y virutas de colores, está inspirado en los donuts tradicionales americanos de los años cincuenta. 
+      Su receta habitual incluye una masa básica frita cubierta con glaseado de vainilla teñido de rosa. 
+      A lo largo de los años se ha convertido en un símbolo de la cultura pop, asociado con el personaje de Homer Simpson.
     `
   }
 };
 
-// Contenedor principal
+// Contenedor donde se mostrará el contenido...
 const container = document.getElementById("post-container");
 
 // Función para mostrar un post
@@ -39,7 +66,6 @@ function mostrarPost(postId) {
 
   container.innerHTML = `
     <h2>${post.title}</h2>
-    <img src="${post.img}" alt="${post.title}">
     <p>${post.content}</p>
   `;
 }
@@ -47,7 +73,7 @@ function mostrarPost(postId) {
 // Mostrar el primero por defecto
 mostrarPost("glaseado");
 
-// Manejar clics en botones
+// Añadir eventos a los botones ..
 document.querySelectorAll(".nav-btn").forEach(btn => {
   btn.addEventListener("click", () => {
     const postId = btn.getAttribute("data-post");
