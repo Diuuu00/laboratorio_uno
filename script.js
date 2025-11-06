@@ -2,7 +2,7 @@
 const posts = {
   glaseado: {
     title: "Donut Glaseado Clásico",
-    img: "https://images.unsplash.com/photo-1612197527762-7b84d1b9e3ad?auto=format&fit=crop&w=800&q=80",
+    img: "https://elobradordelceliaco.com/wp-content/uploads/2024/12/donut-glaseada.jpg",
     content: `
       El donut glaseado clásico nació en Estados Unidos a mediados del siglo XIX, cuando los inmigrantes holandeses popularizaron las rosquillas fritas.
       Su cobertura de azúcar glas se añadió posteriormente, convirtiéndolo en el emblema de cadenas como Krispy Kreme.
@@ -12,7 +12,7 @@ const posts = {
   },
   chocolate: {
     title: "Donut de Chocolate",
-    img: "https://images.unsplash.com/photo-1627308595229-7830a5c91f9f?auto=format&fit=crop&w=800&q=80",
+    img: "https://kitchen335co.com/wp-content/uploads/2023/06/glazed-chocolate-donuts-thumbnail.jpg",
     content: `
       El donut de chocolate surgió como una variación del glaseado tradicional, añadiendo cacao a la masa o una cobertura de chocolate fundido.
       Fue especialmente popularizado en Estados Unidos en la segunda mitad del siglo XX, gracias a su sabor más intenso y su aspecto brillante.
@@ -22,7 +22,7 @@ const posts = {
   },
   cream: {
     title: "Boston Cream Donut",
-    img: "https://images.unsplash.com/photo-1607082349566-187342bcedb6?auto=format&fit=crop&w=800&q=80",
+    img: "https://bakemark.com/wp-content/uploads/2023/05/bostoncreamdonut-scaled.jpg",
     content: `
       Este donut fue creado en Boston, Massachusetts, inspirado en el pastel conocido como Boston Cream Pie.
       Está relleno de una suave crema pastelera y cubierto con una capa de chocolate brillante.
@@ -32,7 +32,7 @@ const posts = {
   },
   jelly: {
     title: "Jelly Donut",
-    img: "https://images.unsplash.com/photo-1617196034796-5f6c6f34e77f?auto=format&fit=crop&w=800&q=80",
+    img: "https://dinnerthendessert.com/wp-content/uploads/2023/06/1x1-jelly-donuts-1.jpg",
     content: `
       El jelly donut, también conocido como donut relleno de mermelada, tiene sus raíces en Europa Central, particularmente en Alemania y Polonia, donde se conocen como Berliner o Pączki.
       Llegó a Estados Unidos con los inmigrantes europeos y se popularizó en el siglo XX.
@@ -42,7 +42,7 @@ const posts = {
   },
   cronut: {
     title: "Cronut",
-    img: "https://images.unsplash.com/photo-1628831318213-7c33984b0a53?auto=format&fit=crop&w=800&q=80",
+    img: "https://static.bainet.es/clip/05e7ce35-409d-4652-8fbe-a2a408ec264c_source-aspect-ratio_1600w_0.jpg",
     content: `
       El cronut es una invención moderna creada en 2013 por el chef Dominique Ansel en Nueva York.
       Combina la técnica del croissant francés con la forma y fritura del donut.
@@ -52,7 +52,7 @@ const posts = {
   },
   simpson: {
     title: "Simpson Donut",
-    img: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=80",
+    img: "https://cdn.blogsthermomix.es/media/Posts/attachments/bcb1a4b97c3f66692ad4b6187d01a009.jpg",
     content: `
       El donut de los Simpson se hizo mundialmente famoso gracias a la serie de televisión creada por Matt Groening.
       Aunque visualmente destaca por su cobertura rosa y virutas de colores, está inspirado en los donuts tradicionales americanos de los años cincuenta.
